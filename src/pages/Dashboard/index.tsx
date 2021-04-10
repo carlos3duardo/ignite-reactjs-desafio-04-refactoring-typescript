@@ -11,10 +11,12 @@ interface FoodProps {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
   available: boolean;
   image: string;
 }
+
+type AddFoodProps = Omit<FoodProps, 'id' | 'available'>;
 
 export default function Dashboard() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
@@ -31,7 +33,7 @@ export default function Dashboard() {
     getFoods();
   }, []);
 
-  const handleAddFood = async (food:FoodProps): Promise<void> => {
+  const handleAddFood = async (food: AddFoodProps): Promise<void> => {
     try {
       const response = await api.post('/foods', {
         ...food,
