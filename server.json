@@ -21,7 +21,7 @@
       "name": "A la Camarón",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
       "price": "25.90",
-      "available": false,
+      "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     },
     {
@@ -35,7 +35,7 @@
     {
       "image": "https://i.ibb.co/Xp7P2P9/Close-up-photo-of-home-made-hamburger-with-beer-made-of-beef-onion-tomato-lettuce-cheese-and-spices.jpg",
       "name": "Big Kahuna Burguer",
-      "price": "21.90",
+      "price": "19.90",
       "description": "Blend de 180g, maionese artesanal, queijo provolone e farofa de bacon",
       "available": true,
       "id": 5
