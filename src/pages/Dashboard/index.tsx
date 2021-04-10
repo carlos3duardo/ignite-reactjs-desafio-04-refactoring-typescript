@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
@@ -12,10 +12,9 @@ interface FoodProps {
   name: string;
   description: string;
   price: number;
-  avaliable: boolean;
+  available: boolean;
   image: string;
 }
-
 
 export default function Dashboard() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
@@ -111,9 +110,4 @@ export default function Dashboard() {
       </FoodsContainer>
     </>
   );
-
-
-
-
 }
-

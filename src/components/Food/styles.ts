@@ -1,11 +1,19 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  available: boolean;
+  image: string;
+}
+
+export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
   header {
-    background: #ffb84d;
+    background-image: url(${props => props.image});
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     border-radius: 8px 8px 0px 0px;
     height: 192px;
     overflow: hidden;
